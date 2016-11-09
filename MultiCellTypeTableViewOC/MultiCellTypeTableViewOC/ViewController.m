@@ -64,6 +64,9 @@
     cell1Data.cellClass = [MCDemoCell1 class];
     cell1Data.headerIconName = @"header_icon";
     cell1Data.content = @"cell1's content";
+    cell1Data.selectCellBlock = ^(MCTableBaseCell *cell, MCTableBaseDescribeData *describeData) {
+        NSLog(@"cell1 selected");
+    };
     
     MCDemoTableDescribeData *cell2Data = [[MCDemoTableDescribeData alloc] init];
     cell2Data.cellClass = [MCDemoCell2 class];

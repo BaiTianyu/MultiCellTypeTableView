@@ -100,12 +100,12 @@
     // 如果选中不同 cell 的动作不一致，则需要使用判断执行对应的操作
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-
+            NSLog(@"cell1 selected");
         } else {
-
+            NSLog(@"cell2 selected");
         }
     } else {
-
+        NSLog(@"cell3 selected");
     }
 }
 
