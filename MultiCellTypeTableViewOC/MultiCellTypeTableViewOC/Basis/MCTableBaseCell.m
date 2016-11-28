@@ -22,8 +22,8 @@ static const CGFloat defaultCellHeight = 44.0;
     return self;
 }
 
-- (CGFloat)cellHeight {
-    return defaultCellHeight;
+- (CGSize)sizeThatFits:(CGSize)size {
+    return CGSizeMake(0, defaultCellHeight);
 }
 
 @end

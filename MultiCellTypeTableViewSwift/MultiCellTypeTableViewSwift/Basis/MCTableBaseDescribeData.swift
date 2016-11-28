@@ -30,7 +30,8 @@ class MCTableBaseDescribeData: NSObject {
     }
     
     func cellHeight() -> CGFloat {
-        return cell?.cellHeight() ?? 0
+        let size = cell?.sizeThatFits(CGSize(width: 0, height: 0))
+        return (size?.height)!
     }
     
 }

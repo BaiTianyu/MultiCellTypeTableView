@@ -14,7 +14,4 @@
 
 @property (nonatomic, strong) MCTableBaseDescribeData *describeData;
 
-// Override this method in subclasses.
-- (CGFloat)cellHeight;
-
 @end

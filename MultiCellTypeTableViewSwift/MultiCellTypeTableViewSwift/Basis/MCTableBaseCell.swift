@@ -31,8 +31,8 @@ class MCTableBaseCell: UITableViewCell {
         super.init(coder: aDecoder)
     }
     
-    func cellHeight() -> CGFloat {
-        return 44.0
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        return CGSize(width: size.width, height: 44.0)
     }
     
 }

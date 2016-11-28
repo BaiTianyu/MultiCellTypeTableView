@@ -56,8 +56,8 @@ static const CGFloat cell3Height = 80;
     _indicateImageView.frame = CGRectMake(150, 10, 33, 33);
 }
 
-- (CGFloat)cellHeight {
-    return cell3Height;
+- (CGSize)sizeThatFits:(CGSize)size {
+    return CGSizeMake(0, cell3Height);
 }
 
 

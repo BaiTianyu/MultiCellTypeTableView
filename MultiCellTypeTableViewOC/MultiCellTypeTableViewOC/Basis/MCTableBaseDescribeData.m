@@ -33,7 +33,7 @@
 }
 
 - (CGFloat)cellHeight {
-    return [_cell cellHeight];
+    return [_cell sizeThatFits:CGSizeZero].height;
 }
 
 @end

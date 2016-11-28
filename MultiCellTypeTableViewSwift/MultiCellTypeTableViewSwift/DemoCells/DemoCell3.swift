@@ -63,7 +63,8 @@ class DemoCell3: MCTableBaseCell {
         indicateImageView.frame = CGRect(x: 150, y: 10, width: 33, height: 33)
     }
 
-    override func cellHeight() -> CGFloat {
-        return 80
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        return CGSize(width: 0, height: 80)
     }
+    
 }
